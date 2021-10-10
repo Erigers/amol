@@ -1,4 +1,4 @@
-# dita-client
+# Amol - Angela's Map of Life
 
 ## Build Setup
 
