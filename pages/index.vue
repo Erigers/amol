@@ -71,7 +71,7 @@ export default {}
 // special thanks section
 .special-thanks-section {
   width: 100%;
-  background: blue;
+  background: $color-blue;
   height: auto;
 }
 .special-thanks-section .partner {

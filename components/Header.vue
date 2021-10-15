@@ -1,10 +1,10 @@
 <template>
-    <header>
-      <div class="container">
+    <header class="header flex-center">
+      <div class="o-container flex-space-between">
         <div class="logo-holder">
           <img src="~/assets/svg/amol-logo.svg" alt="amol-logo">
         </div>
-        <div class="options">
+        <div class="options flex-space-between">
           <div class="flag english-flag">
             <img src="~/assets/svg/english-flag.svg" alt="english-flag">
           </div>
@@ -20,40 +20,38 @@
 // Header
 header {
   width: 100%;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .container {
-    max-width: 1440px;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .options {
-      width: 329px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .flag {
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        border: 5px solid transparent;
-        overflow: hidden;
-        transition: all .5s;
-        cursor: pointer;
-        &:hover {
-          border: 5px solid #476CF2;
-        }
-        img {
-          width: 100%;
-        }
+  height: 130px;
+  .logo-holder {
+    width: 150px;
+    height: 64px;
+    @include mq($from: phablet) {
+      width: 210px;
+      height: 90px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .options {
+    width: 250px;
+    .flag {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 5px solid transparent;
+      overflow: hidden;
+      transition: all .5s;
+      cursor: pointer;
+      &:hover {
+        border: 5px solid $color-blue;
+      }
+      img {
+        width: 100%;
       }
     }
   }
   img {
-    width: 200px;
+    width: 150px;
   }
 }
 </style>

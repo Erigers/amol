@@ -14,7 +14,6 @@
             <img src="angela-hello.gif" alt="angela-s-animoji">
           </div>
           <div class="speech-text">
-            <h1 class="bubble-speech">Hi, this is Angela</h1>
             <h4>
               She works @an international, multicultural company in Germany, Karlsruhe - FIZ Karlsruhe. She likes to put pins on the map of each one of her colleagues’ nationality. Since the change WFO - WFH from Covid-19 regulations, she misses her map at the office.
             </h4>
@@ -51,15 +50,20 @@ section.welcome-section {
       }
       .bubble-trail {
         position: absolute;
-        bottom: 0; right: -292px;
+        // bottom: 0; right: -292px; - desktop
+        top: 80px; right: 310px;
       }
     }
     .picture {
       width: 245px;
       margin-left: 20px;
+      margin-top: 20px;
       img {
         width: 100%;
       }
+    }
+    .speech-text {
+      padding: 20px;
     }
   }
 }
