@@ -142,20 +142,34 @@ section.welcome-section {
       }
     }
     .button-holder {
-      width: 355px;
-      margin: auto;
+      width: 80%;
+      max-width: 355px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
       @include mq($from: phablet) {
         margin-top: -90px;
         margin-bottom: 90px;
       }
     }
     .chevron-holder {
-      margin-top: -50px;
-      cursor: pointer;
-      transition: all .5s;
-      animation-name: scrollDown;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
+      display: flex;
+      justify-content: center;
+      margin-top: 70px;
+      margin-bottom: 50px;
+      @include mq($from: phablet) {
+        margin: 0;
+        justify-content: flex-start;
+      }
+      img {
+        margin-top: -50px;
+        cursor: pointer;
+        transition: all .5s;
+        animation-name: scrollDown;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
     }
   }
   @keyframes scrollDown {

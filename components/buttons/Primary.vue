@@ -14,8 +14,8 @@
     position: absolute;
     top: 10px;
     left: -10px;
-    width: 355px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
     border-radius: 7px;
     border: 1px solid transparent;
     background: $color-tertiary;
