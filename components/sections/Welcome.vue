@@ -1,26 +1,31 @@
 <template>
     <section class="welcome-section">
-      <div class="container">
+      <div class="o-container">
         <div class="left-side">
-          <div class="bubble-wrapper-mobile">
-            <div class="bubble-greeting-mobile">
-              <h1 class="bubble-speech">Hi, this is Angela</h1>
+          <div class="animoji-talking">
+            <div class="bubble-wrapper-mobile">
+              <div class="bubble-greeting-mobile">
+                <h1 class="bubble-speech">Hi, this is Angela</h1>
+              </div>
+              <div class="bubble-trail">
+                <img src="~/assets/svg/bubble-trail.svg" alt="">
+              </div>
             </div>
-            <div class="bubble-trail">
-              <img src="~/assets/svg/bubble-trail.svg" alt="">
+            <div class="picture">
+              <img src="angela-hello.gif" alt="angela-s-animoji">
             </div>
-          </div>
-          <div class="picture">
-            <img src="angela-hello.gif" alt="angela-s-animoji">
           </div>
           <div class="speech-text">
             <h4>
-              She works @an international, multicultural company in Germany, Karlsruhe - FIZ Karlsruhe. She likes to put pins on the map of each one of her colleagues’ nationality. Since the change WFO - WFH from Covid-19 regulations, she misses her map at the office.
+              She works @FIZ Karlsruhe, a multinational company.<br><br> She likes to put a pin on the countries of her fellow colleagues’ nationality.
             </h4>
           </div>
         </div>
         <div class="right-side">
-          <!-- map image -->
+          <div class="map-holder">
+            <img src="/map-block.png" alt="map-block">
+          </div>
+          <Buttons-Primary />
         </div>
       </div>
     </section>
@@ -29,13 +34,29 @@
 // welcome section
 section.welcome-section {
   width: 100%;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
+  .o-container {
+    @include mq($from: desktop) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
   .left-side {
     width: 100%;
     display: flex;
     flex-direction: column;
+    @include mq($from: desktop) {
+      width: 556px;
+    }
+    .animoji-talking {
+      width: 100%;
+      max-width: 500px;
+      margin: auto;
+    }
     .bubble-wrapper-mobile {
       width: 100%;
+      max-width:556px;
       display: flex;
       justify-content: right;
       position: relative;
@@ -63,7 +84,23 @@ section.welcome-section {
       }
     }
     .speech-text {
-      padding: 20px;
+      font-size: 22px;
+    }
+  }
+  .right-side {
+    width: 100%;
+    max-width: 747px;
+    overflow: hidden;
+    margin-left: 24px;
+    @include mq($from: desktop) {
+      width: 747px;
+      margin-right: -24px;
+    }
+    .map-holder {
+      width: 100%;
+      img {
+        width: 100%;
+      }
     }
   }
 }

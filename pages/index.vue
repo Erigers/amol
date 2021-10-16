@@ -2,7 +2,7 @@
   <div class="landing">
     <Header />
     <Sections-Welcome />
-    <section class="open-source-section">
+    <!-- <section class="open-source-section">
       <h2>Open Source</h2>
       <p>Remember, this is a free for everyone project and open source.</p>
       <ul>
@@ -48,7 +48,7 @@
     </section>
     <footer>
       <p>This project has been brought to you from Angela with love.</p>
-    </footer>
+    </footer> -->
   </div>
 </template>
 

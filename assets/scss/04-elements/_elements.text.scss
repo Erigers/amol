@@ -1,8 +1,12 @@
 h1, h2, h3 {
-    font: $font-body;
+    font-family: $font-header;
+    font-weight: 400;
+    color: $color-dark;
 }
 
 h4 {
-    font: $font-body;
+    font-family: $font-body;
     font-weight: 600;
+    font-size: 22px;
+    color: $color-dark;
 }
