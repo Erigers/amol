@@ -10,10 +10,6 @@
 <style lang="scss" scoped>
 .button-holder {
   position: relative;
-  width: 355px;
-  margin: auto;
-  margin-top: -90px;
-  margin-bottom: 90px;
   .after-background {
     position: absolute;
     top: 10px;

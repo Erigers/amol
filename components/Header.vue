@@ -34,6 +34,9 @@ header {
   }
   .options {
     width: 250px;
+    @include mq($from: wide) {
+      width: 350px;
+    }
     .flag {
       width: 42px;
       height: 42px;
@@ -47,11 +50,15 @@ header {
       }
       img {
         width: 100%;
+        border-radius: 50%;
       }
     }
   }
   img {
     width: 150px;
+    @include mq($from: wide) {
+      width: 250px;
+    }
   }
 }
 </style>
