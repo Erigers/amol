@@ -2,10 +2,19 @@
     display: flex;
     width: 100%;
     flex-direction: column;
+    @include mq($from: desktop) {
+        flex-direction: row;
+    }
 }
 .o-column-center {
-    width: calc(100% - 710px);
+    width: 100%;
+    @include mq($from: desktop) {
+        width: calc(100% - 310px);
+    }
 }
 .o-column-not-center {
-    width: 155px;
+    width: 100%;
+    @include mq($from: desktop) {
+        width: 155px;
+    }
 }

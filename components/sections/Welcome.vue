@@ -157,12 +157,15 @@ section.welcome-section {
       display: flex;
       justify-content: center;
       margin-top: 70px;
-      margin-bottom: 50px;
+      height: 50px;
       @include mq($from: phablet) {
         margin: 0;
+      }
+      @include mq($from: desktop) {
         justify-content: flex-start;
       }
       img {
+        width: 61px;
         margin-top: -50px;
         cursor: pointer;
         transition: all .5s;
