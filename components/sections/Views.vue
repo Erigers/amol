@@ -30,9 +30,39 @@
 <style lang="scss" scoped>
 .views {
     margin-top: 50px;
+    padding: 50px 0 100px 0;
     .o-row {
+        position: relative;
         align-items: baseline;
+        padding-top: 100px;
+        @include mq($from: desktop) {
+            padding-top: 0;
+        }
         .o-column-not-center {
+            position: relative;
+            width: 40px;
+            @include mq($from: desktop) {
+                width: 150px;
+            }
+            &:nth-child(1) {
+                order: 1;
+                position: absolute;
+                top: 0;
+                left: 0;
+                @include mq($from: desktop) {
+                    position: static;
+                }
+            }
+            &:nth-child(3) {
+                position: absolute;
+                top: 0;
+                right: 0;
+                order: 2;
+                @include mq($from: desktop) {
+                    order: 3;
+                    position: static;
+                }
+            }
             img {
                 width: 40px;
                 @include mq($from: desktop) {
@@ -44,6 +74,8 @@
             display: flex;
             justify-content: space-evenly;
             align-items: baseline;
+            order: 3;
+            @include mq($from: desktop) { order: 2 }
             .candle {
                 position: relative;
                 width: 80px;
@@ -55,11 +87,16 @@
                 }
                 .counter {
                     position: absolute;
-                    left: 60px;
-                    top: 30px;
-                    font-family: $font-header;
                     color: $color-white;
-                    font-size: 52px;
+                    font-family: $font-header;
+                    left: 40px;
+                    top: 20px;
+                    font-size: 32px;
+                    @include mq($from: desktop) {
+                        left: 60px;
+                        top: 30px;
+                        font-size: 52px;
+                    }
                 }
             }
         }
