@@ -4,6 +4,7 @@
     <Sections-Welcome />
     <Sections-Background-Story />
     <Sections-Gallery />
+    <Sections-Views />
     <Sections-Achievement />
     <Sections-Footer />
     <!-- <section class="open-source-section">

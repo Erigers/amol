@@ -23,7 +23,7 @@
 <style lang="scss" scoped>
 .achievement {
     background: $color-blue;
-    padding: 0 5px 50px 5px;
+    padding: 20px 5px 50px 5px;
     .second-background {
         background: url(~/assets/svg/footer-second-background.svg);
         background-position: center;
