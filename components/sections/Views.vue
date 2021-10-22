@@ -42,7 +42,7 @@
             position: relative;
             width: 40px;
             @include mq($from: desktop) {
-                width: 150px;
+                width: 180px;
             }
             &:nth-child(1) {
                 order: 1;
