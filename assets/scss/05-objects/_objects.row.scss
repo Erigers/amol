@@ -1,0 +1,11 @@
+.o-row {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.o-column-center {
+    width: calc(100% - 710px);
+}
+.o-column-not-center {
+    width: 155px;
+}

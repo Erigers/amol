@@ -2,6 +2,7 @@
   <div class="landing">
     <Header />
     <Sections-Welcome />
+    <Sections-Background-Story />
     <!-- <section class="open-source-section">
       <h2>Open Source</h2>
       <p>Remember, this is a free for everyone project and open source.</p>

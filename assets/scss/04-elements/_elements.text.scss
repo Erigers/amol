@@ -3,10 +3,16 @@ h1, h2, h3 {
     font-weight: 400;
     color: $color-dark;
 }
-
+h2 {
+    font-size: 52px;
+}
 h4 {
     font-family: $font-body;
     font-weight: 600;
     font-size: 22px;
     color: $color-dark;
+}
+p {
+    font-family: $font-body;
+    font-weight: 400;
 }

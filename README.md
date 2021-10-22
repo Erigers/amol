@@ -1,5 +1,7 @@
 # Amol - Angela's Map of Life
 
+## Design
+[Figma presentation](https://www.figma.com/proto/J47qeWSYVb3aAAmUNOrWTT/Angela's-Map-of-Life-(AMoL)?node-id=18%3A103&scaling=min-zoom&page-id=0%3A1)
 ## Build Setup
 
 ```bash
