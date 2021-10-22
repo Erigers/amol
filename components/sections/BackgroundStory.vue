@@ -49,6 +49,24 @@
                     <img src="~/assets/svg/gift.svg" alt="gift-svg">
                 </div>
             </div>
+            <div class="o-row">
+                <div class="o-column-not-center">
+                    <img src="~/assets/svg/map-icon.svg" alt="map-of-angela">
+                </div>
+                <div class="o-column-center">
+                    <p class="missing-gift">and I was missing a gift!</p>
+                </div>
+                <div class="o-column-not-center" />
+            </div>
+            <div class="o-row">
+                <div class="o-column-not-center" />
+                <div class="o-column-center">
+                    <p>I want them to have this map wherever they travel into the world on their roulotte and pin everyone they meet in their map of life.</p>
+                </div>
+                <div class="o-column-not-center roulotte-column">
+                    <img src="/roulotte.png" alt="roulotte-sticker">
+                </div>
+            </div>
         </div>
     </section>
 </template>
@@ -145,10 +163,36 @@ img[alt="franzjorg-wed"] {
             margin-right: 40px;
             margin-top: -60px;
             @include mq($from: phablet) {
-                margin-right: 40px;
-                margin-top: 40px;
+                margin-right: 300px;
+                margin-top: 0;
             }
         }
+    }
+}
+// fifth row
+img[alt="map-of-angela"] {
+    width: 100px;
+    @include mq($from: desktop) {
+        width: 155px;
+        margin-left: 50px;
+        margin-top: -60px;
+    }
+}
+.missing-gift {
+    text-align: center;
+}
+// sixth - last row
+.roulotte-column {
+    display: flex;
+    justify-content: flex-end;
+}
+img[alt="roulotte-sticker"] {
+    width: 120px;
+    margin-top: -20px;
+    @include mq($from: desktop) {
+        width: 150px;
+        margin-top: 100px;
+        margin-right: 140px;
     }
 }
 </style>
