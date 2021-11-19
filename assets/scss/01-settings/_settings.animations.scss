@@ -4,3 +4,40 @@
 
 $transition-duration: 0.3s;
 $easing: cubic-bezier(0.23, 1, 0.32, 1);
+
+/* Scroll down chevron movement up & down */
+@keyframes scrollDown {
+   0% {
+     margin-top: -50px;
+   }
+   50% {
+     margin-top: -60px;
+   }
+   100% {
+     margin-top: -50px;
+   }
+ }
+
+ /* Rotate slowly bubbles */
+ @keyframes rotateBubbles {
+   0% {
+     transform: rotate(0deg);
+     top: 80px; right: 310px;
+   }
+   25% {
+      transform: rotate(10deg);
+      top: 82px; right: 308px;
+   }
+   50% {
+     transform: rotate(0deg);
+     top: 80px; right: 310px;
+   }
+   75% {
+      transform: rotate(-10deg);
+      top: 82px; right: 312px;
+   }
+   100% {
+     transform: rotate(0deg);
+     top: 80px; right: 310px;
+   }
+ }

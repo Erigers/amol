@@ -5,7 +5,7 @@
     <Sections-Background-Story />
     <Sections-Gallery />
     <Sections-Views />
-    <Sections-Achievement />
+    <!-- <Sections-Achievement /> -->
     <Sections-Footer />
     <!-- <section class="open-source-section">
       <h2>Open Source</h2>

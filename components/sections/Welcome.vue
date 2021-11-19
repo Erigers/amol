@@ -110,6 +110,10 @@ section.welcome-section {
             position: absolute;
             // bottom: 0; right: -292px; - desktop
             top: 80px; right: 310px;
+            transition: all 4s;
+            animation-name: rotateBubbles;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
           }
         }
         h4 {
@@ -173,17 +177,6 @@ section.welcome-section {
         animation-duration: 2s;
         animation-iteration-count: infinite;
       }
-    }
-  }
-  @keyframes scrollDown {
-    0% {
-      margin-top: -50px;
-    }
-    50% {
-      margin-top: -60px;
-    }
-    100% {
-      margin-top: -50px;
     }
   }
 }
